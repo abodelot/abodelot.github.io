@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  --bg: #f4efea;
+  --fg: #383838;
+  --link: #ff7169;
+  --hover: #5fb2ff;
+  --tag: #5fb2ff;
+
+  font-family: 'Inter', sans-serif;
+  line-height: 1.75;
+  font-size: 14px;
+  color: var(--fg);
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+}
+
+a, a:visited {
+  color: var(--link);
+}
+a:hover {
+  color: var(--hover);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* header */
+
+header {
+  padding: 12px;
+}
+
+/* main */
+
+main {
+  padding: 12px;
+  flex: 1;
+}
+main a {
+  text-decoration: none;
+  border-bottom: 2px solid var(--link);
+}
+main a:hover {
+  border-bottom: 2px solid var(--hover);
+}
+
+div.content {
+  margin: 12px 0 30px 0;
+}
+@media only screen and (min-width: 768px) {
+  div.content {
+    display: flex;
+  }
+  div.content-text {
+    padding-left: 12px;
+  }
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+}
+h2 span.tags {
+  margin-left: auto;
+}
+h2 span.tags i {
+  border-radius: 4px;
+  font-size: 12px;
+  background: var(--tag);
+  color: #f0f0f0;
+  text-shadow: 0 1px 1px rgba(0 0 0 / 50%);
+  padding: 2px 6px;
+  margin-left: 6px;
+}
+
+/* footer */
+
+footer {
+  padding: 12px;
+  text-align: right;
+  color: #555;
+}
